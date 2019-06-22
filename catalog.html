@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="main-page">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.min.css">
+	<script>
+		document.createElement( "picture" );
+	</script>
+	<script src="picturefill.min.js" async></script>
+</head>
+<body class="main-page inner-page">
+	<svg style="display: none"><symbol id="fb" viewBox="0 0 13.518 27.75"><path d="M9.531 27.75H2.715V14.846H0V8.472h2.629c-.202-2.887.298-5 1.519-6.444C5.187.799 6.731.117 8.736.002l4.782-.001v6.15H9.763c-.166.315-.251 1.093-.252 2.321h3.978v6.375H9.531V27.75zm-5.316-1.5h3.816V13.346h3.957V9.972H8.035l-.016-.734c-.044-2.04.002-3.784 1.007-4.46l.19-.127h2.801v-3.15H8.778c-1.557.091-2.711.581-3.485 1.496-1.041 1.231-1.41 3.298-1.099 6.144l.092.832H1.5v3.375h2.715V26.25z"/></symbol><symbol id="html-academy" viewBox="0 0 26.943 34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.474 8.017 13.43-7.99.042-.024V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.549-1.212L25.02 3.147l-.001 8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.015 1.415 5.904 3.513-.86.507-5.029-2.992-.015 1.415 3.827 2.275-.782.524-3.03-1.787-.015 1.413 1.854 1.091-1.8 1.081-11.356-6.752 11.371-6.835zm-11.48 8.34l11.411 6.791.017 1.044-7.943-4.728-.015 1.416 7.978 4.795.019 1.076-7.974-4.74-.013 1.414 8.021 4.822.047.024 8.142-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></symbol><symbol id="insta" viewBox="0 0 23 23"><path d="M17.002 1.499c2.48 0 4.498 2.02 4.498 4.501v11c0 2.481-2.018 4.5-4.498 4.5H6.01A4.504 4.504 0 0 1 1.512 17V6c0-2.481 2.018-4.5 4.498-4.5h10.992m0-1.5H6.01C2.71 0 .013 2.699.013 6v11.001C.013 20.299 2.71 23 6.01 23h10.995C20.301 23 23 20.299 23 16.999V6c0-3.301-2.699-6-5.998-6z"/><path d="M11.506 7.078a4.434 4.434 0 0 1 4.429 4.428c0 2.44-1.989 4.43-4.429 4.43a4.434 4.434 0 0 1-4.428-4.43 4.431 4.431 0 0 1 4.428-4.428m0-1.5a5.929 5.929 0 0 0 0 11.855c3.274 0 5.926-2.653 5.926-5.927s-2.652-5.928-5.926-5.928z"/><circle cx="17.646" cy="5.379" r="1.341"/></symbol><symbol id="programs-pro-icon" viewBox="0 0 454.054 188.36"><path d="M417.005 19.557c4.077-6.327 9.187-11.443 15.388-15.574 3.365-2.242 5.508-2.236 7.298 1.859 2.857 6.534 5.109 13.063 3.062 20.282-.74 2.611-.202 4.851 1.422 7.026 1.892 2.533 3.574 5.223 5.324 7.861 4.281 6.452 6.023 13.249 3.126 20.828-1.266 3.313-1.399 6.751-.686 10.316.652 3.262.529 6.633-.001 9.953-.868 5.434-3.678 9.236-9.154 10.676-4.311 1.134-8.055 3.104-10.865 6.666-.73.925-1.659 1.64-2.896 1.807-3.995.54-14.154-8.473-14.142-12.553.002-.666.04-1.332.052-1.999.224-12.05-.498-13.217-11.553-18.045-2.326-1.016-4.54-2.163-6.133-4.166-2.194-2.759-4.861-2.506-7.652-1.335-2.826 1.186-4.693 3.026-4.317 6.478.883 8.118 1.223 16.267 1.184 24.435-.005.95.259 2.065.791 2.831 10.488 15.111 14.438 32.883 19.668 49.993 3.991 13.056 11.505 20.154 25.012 21.108 2.149.152 4.278.653 6.405 1.049 6.045 1.124 9.665 4.933 11.446 10.617 2.216 7.075 1.112 8.581-6.254 8.63-7.331.049-14.664-.038-21.994.059-2.965.039-5.488-.539-7.712-2.732-3.262-3.216-7.537-4.86-11.641-6.679-4.504-1.997-8.689-4.508-11.37-8.675-3.752-5.831-8.855-10.356-13.633-15.217-9.575-9.741-19.487-19.147-28.543-29.402-6.518-7.381-10.788-15.581-10.705-25.616.026-3.152-.791-4.469-4.025-2.882-1.033.507-2.214.984-3.334 1.002-9.535.153-14.198 5.845-17.576 14.058-2.965 7.209-7.196 13.892-10.765 20.859-2.377 4.64-3.918 9.539-3.913 14.834.008 7.914 1.869 10.755 9.33 13.419 4.625 1.651 9.074 3.381 11.603 8.021 2.858 5.243 2.018 6.859-3.85 6.918-7.664.077-15.33-.037-22.993.062-2.981.039-4.987-.994-6.443-3.702-1.889-3.515-4.156-6.827-6.253-10.231-3.478-5.648-4.889-11.419-2.534-18.063 2.047-5.775 1.123-11.964.27-17.845-1.271-8.758.112-16.581 5.844-23.429 1.869-2.233 2.112-3.462-1.336-4.11-14.006-2.631-27.245-7.57-40.06-13.717a6.226 6.226 0 0 0-.458-.201c-10.816-4.155-12.898-3.225-15.937 7.673-2.638 9.46-5.385 18.912-7.445 28.505-2.276 10.6.384 20.844 3.79 30.856 1.323 3.888 5.283 3.723 8.319 4.614 6.648 1.951 12.375 4.764 15.279 11.644 2.257 5.348 1.964 6.07-3.691 6.117-5.832.048-11.684-.288-17.49.1-5.523.369-9.644-1.745-14.149-4.754-16.294-10.884-20.92-27.132-22.229-45.221-.812-11.231-6.732-20-13.919-28.125-1.396-1.578-2.665-2.229-4.694-.941-7.095 4.502-15.086 6.986-22.87 9.935-16.371 6.202-30.573 15.457-41.314 29.538-3.907 5.121-6.6 10.8-7.554 17.205-.901 6.048.796 8.6 6.64 10.323 6.468 1.906 9.032 5.039 9.765 11.568.31 2.763-.69 4.186-3.469 4.187-9.164.003-18.327-.026-27.491-.057-2.027-.007-3.331-1.205-4.539-2.694-4.376-5.394-6.429-11.643-6.607-18.477-.304-11.698 1.07-23.271 3.132-34.762 1.273-7.092 4.616-12.91 11.359-16.089 20.017-9.44 30.478-27.13 39.915-45.775 1.903-3.76.218-4.329-3.043-4.038-9.794.876-18.185 5.221-26.025 10.728-10.111 7.103-19.211 15.433-28.225 23.855-9.871 9.222-21.08 15.629-34.916 16.601C10.66 109.189-1.086 95.689.079 73.236c.397-7.65 2.971-14.728 8.221-20.5 4.049-4.451 8.971-6.884 15.197-5.081 5.173 1.497 6.506 4.102 4.37 8.945-.867 1.966-2.21 3.716-3.245 5.614-1.192 2.186-2.544 4.334-3.371 6.66-3.563 10.022 1.241 17.165 11.842 18.066 11.246.956 20.388-3.734 28.871-10.384 10.295-8.07 19.273-17.575 27.276-27.754 12.627-16.058 28.946-24.631 48.808-27.213 7.692-1 14.624-4.44 21.986-6.506 14.05-3.943 28.271-6.298 42.878-5.941 6.884.168 13.249-.928 19.822-3.607 16.51-6.729 33.778-6.703 51.099-3.218 13.549 2.726 26.941 6.122 40.383 9.303 7.606 1.8 15.939 1.155 23.704-.535 14.995-3.264 30.005-6.308 45.382-6.591 10.06-.185 19.908 1.456 29.175 5.709 6.472 2.969 6.478 2.956 4.528 9.354z"/></symbol><symbol id="programs-slim-icon" viewBox="0 0 367.603 512"><path d="M79.587 0h2c3.575 1.857 5.714 4.978 7.548 8.416 3.079 5.77 5.272 11.898 6.915 18.179 1.118 4.273 3.43 6.318 7.777 7.071 12.275 2.127 21.222 9.128 27.467 19.756 3.896 6.629 6.925 13.662 9.686 20.823 7.497 19.44 13.226 39.483 20.216 59.094 3.338 9.365 3.475 9.241 13.483 9.338 11.895.115 11.063-1.861 11.244 11.329.057 4.181-1.26 6.291-5.673 6.078-1.367-.066-3.423-.691-3.939 1.137-.429 1.52 1.257 2.577 2.266 3.644 6.264 6.63 14.106 10.496 22.782 12.841 9.965 2.694 20.126 4.799 29.887 8.092 24.898 8.4 47.984 20.127 65.925 39.976 10.952 12.117 18.482 26.482 24.884 41.387 19.504 45.409 28.639 93.469 35.91 141.981 3.406 22.726 5.804 45.578 7.662 68.472.928 11.434 2.13 22.878 1.961 34.386h-175c-.617-2.436.388-4.612 1.216-6.762 3.562-9.257 10.867-14.082 20.095-16.218 3.646-.844 4.111-1.942 1.845-4.828-3.846-4.898-6.374-10.535-8.354-16.392-8.575-25.368-11.886-51.844-16.023-78.114-3.158-20.052-7.872-39.456-18.261-57.151-7.68-13.082-17.306-24.415-29.381-33.631-4.363-3.329-4.501-3.33-5.248 2.322-.5 3.784-.631 7.619-.863 11.435-1.517 24.955-1.383 49.899.905 74.801 1.784 19.418 2.492 38.813.804 58.292-1.945 22.447-6.058 44.477-11.737 66.246h-70c1.698-11.578 11.05-21.248 22.271-23.442 6.739-1.317 13.275-.429 19.786 1.068 3.141.722 4.452.156 4.718-3.427 2.078-28.072.659-55.974-5.048-83.499-6.594-31.803-12.804-63.67-16.098-95.981-1.368-13.422-5.43-25.474-11.944-37.093-6.269-11.184-11.727-22.821-17.882-34.073-4.878-8.917-5.806-17.928-2.179-27.394 1.429-3.73 2.784-7.51 4.526-11.095 5.022-10.335 10.35-20.523 15.302-30.891 2.561-5.361 2.033-5.934-3.725-6.057-8.564-.184-8.567-.184-8.702-8.673-.018-1.166.029-2.333.006-3.499-.072-3.633 1.344-5.642 5.33-5.346 2.652.197 5.33.001 7.996.051 3.633.068 4.68-1.52 3.79-5.04-3.043-12.035-14.596-21.902-26.973-23.414-11.757-1.436-23.252.232-34.721 2.275-3.408.607-5.285-.138-6.572-3.376C5.376 107.833 3.022 102.676.7 97.51c-.969-2.157-1.047-4.05.488-6.043C17.876 69.797 36.062 49.769 60.9 37.07c2.606-1.332 4.051-3.034 4.662-5.941 1.576-7.497 3.416-14.939 6.657-21.948 1.703-3.679 3.664-7.12 7.368-9.181z"/></symbol><symbol id="right-arrow-long" viewBox="0 0 24.2 11"><path d="M17.6 0l6.6 5.5-6.6 5.5V6.6H0V4.4h17.6z"/></symbol><symbol id="vk" viewBox="0 0 30.004 15.761"><path d="M23.938 15.76c-.386 0-1.17-.082-2.075-.632-.642-.385-1.223-.968-1.784-1.532-.438-.44-1.171-1.177-1.447-1.177-.268.075-.481.921-.476 1.569.004.113-.001.774-.468 1.213-.425.4-1.088.485-1.216.498l-1.926.007c-.967 0-4.358-.218-7.429-3.021C3.443 9.327.282 2.887.149 2.615c-.197-.462-.248-1.066.152-1.482C.693.72 1.382.661 1.66.654L5.743.63l.115.008c.091.014.567.095.957.349.388.247.59.651.626.73.01.021.649 1.432 1.475 2.684 1.312 1.99 1.896 2.455 2.103 2.562.188-.417.277-1.7.187-2.871.001-.493-.101-1.098-.252-1.278-.112-.134-.426-.253-.778-.294l-.722-.691c-.096-.658.635-1.226 1.149-1.446.737-.316 1.792-.382 3.147-.382l.71.005c1.235.012 1.622.081 2.149.191 1.702.361 1.64 1.729 1.567 3.312-.021.464-.046 1.001-.046 1.621 0 .151-.005.312-.011.479-.012.38-.032 1.038.093 1.304.219-.145.852-.665 2.072-2.483.783-1.165 1.4-2.539 1.517-2.803l.001-.001c.182-.43.608-.941 1.613-.946l4.274-.024c.012-.003.172-.016.377-.016.98 0 1.597.287 1.832.854.269.65.169 1.657-2.354 4.605-.37.432-.697.804-.982 1.127-.598.678-1.216 1.379-1.237 1.595.053.169.662.665 1.252 1.145 1.53 1.247 2.528 2.264 3.033 3.073.522.759.429 1.33.258 1.677-.424.864-1.638.973-1.877.985l-3.79.047a2.525 2.525 0 0 1-.263.012zm-5.307-4.84c.899 0 1.682.786 2.511 1.618.497.5 1.011 1.016 1.496 1.307.727.44 1.316.421 1.398.412l.103-.009 3.805-.047c.171-.012.411-.073.536-.136a1.167 1.167 0 0 0-.098-.167c-.449-.718-1.388-1.659-2.686-2.718-1.184-.963-1.801-1.465-1.865-2.244-.066-.805.493-1.439 1.607-2.703.28-.318.604-.685.967-1.109 1.559-1.821 1.957-2.64 2.058-2.956-.17-.029-.648-.021-.678-.018l-4.361.028c-.191.001-.249.035-.249.036-.176.414-.812 1.812-1.644 3.05-1.895 2.82-2.785 3.2-3.407 3.201-.204 0-.396-.05-.569-.148-1.003-.569-.963-1.834-.934-2.757.005-.149.01-.295.01-.431 0-.646.025-1.207.048-1.689.076-1.68.016-1.692-.379-1.776-.409-.086-.705-.147-1.856-.159l-.693-.005c-.624 0-1.343.014-1.906.098.092.074.18.157.259.251.588.704.604 1.951.601 2.194.13 1.646.061 3.796-1.018 4.313a1.365 1.365 0 0 1-.597.137c-.926 0-1.854-.885-3.425-3.267a22.863 22.863 0 0 1-1.587-2.887.47.47 0 0 0-.075-.094 1.133 1.133 0 0 0-.32-.116l-4.001.024c-.021.001-.045.002-.07.005.591 1.189 3.426 6.592 6.519 9.419 2.74 2.502 5.826 2.629 6.417 2.629l1.851-.003c.046-.01.218-.062.269-.1-.019.018-.01-.053-.01-.097-.003-.265.012-2.595 1.578-3.034.126-.034.259-.052.395-.052z"/></symbol></svg>
+	<header class="page-header">
+		<nav class="main-nav main-nav--closed container container--main-nav">
+			<div class="main-nav__logo-block">
+				<a href="index.html" class="site-logo">
+					<picture>
+						<source media="(min-width: 1300px)" srcset="img/site-logo/site-logo-desctop.svg"/>
+						<source media="(min-width: 768px)" srcset="img/site-logo/site-logo-tablet.svg"/>
+						<source srcset="img/site-logo/site-logo-mobile.svg"/>
+						<img alt="Логотип cat energy" class="site-logo__img" width="33" height="38">
+					</picture>
+				</a>
+				<a href="index.html" class="text-logo page-header__text-logo" tabindex="-1" aria-hidden="true">
+					<img src="img/text-logo.svg" class="text-logo__img page-header__text-logo-img" width="101" height="18" role="presentation"/>
+				</a>
+			</div>
+			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+			<ul class="main-nav__list">
+				<li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+				<li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Каталог продукции</a></li>
+				<li class="main-nav__item"><a href="form.html" class="main-nav__link">Подбор программы</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="page-main">
+		<h1 class="main-page__title main-page__title--catalog container">Каталог продукции</h1>
+		<section class="main-catalog container">
+			<h2 class="visually-hidden">Каталог кошачьего корма</h2>
+			<ul class="main-catalog__list">
+				<li class="main-catalog__item">
+					<div class="main-catalog__img-wrapper">
+						<picture>
+							<source media="(min-width: 1300px)" srcset="img/main-catalog/catalog-1-desktop.png"/>
+							<source media="(min-width: 768px)" srcset="img/main-catalog/catalog-1-tablet.png"/>
+							<source srcset="img/main-catalog/catalog-1-mobile.png"/>
+							<img alt="Корм" class="main-catalog__img">
+						</picture>
+					</div>
+					<div class="main-catalog__description">
+						<h3 class="main-catalog__title">Cat Energy PRO 500 г</h3>
+						<ul class="main-catalog__info">
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Обьем</span>
+								<span class="main-catalog__value">500 г</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Вкус</span>
+								<span class="main-catalog__value">Курица</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Цена</span>
+								<span class="main-catalog__value">700 р.</span>
+							</li>
+						</ul>
+					</div>
+					<div class="main-catalog__order">
+						<button class="main-catalog__btn btn" type="button">Заказать</button>
+					</div>
+				</li>
+				<li class="main-catalog__item">
+					<div class="main-catalog__img-wrapper">
+						<picture>
+							<source media="(min-width: 1300px)" srcset="img/main-catalog/catalog-2-desktop.png"/>
+							<source media="(min-width: 768px)" srcset="img/main-catalog/catalog-2-tablet.png"/>
+							<source srcset="img/main-catalog/catalog-2-mobile.png"/>
+							<img alt="Корм" class="main-catalog__img">
+						</picture>
+					</div>
+					<div class="main-catalog__description">
+						<h3 class="main-catalog__title">Cat Energy PRO 1000 г</h3>
+						<ul class="main-catalog__info">
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Обьем</span>
+								<span class="main-catalog__value">1000 г</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Вкус</span>
+								<span class="main-catalog__value">Курица</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Цена</span>
+								<span class="main-catalog__value">1000 р.</span>
+							</li>
+						</ul>
+					</div>
+					<div class="main-catalog__order">
+						<button class="main-catalog__btn btn" type="button">Заказать</button>
+					</div>
+				</li>
+				<li class="main-catalog__item">
+					<div class="main-catalog__img-wrapper">
+						<picture>
+							<source media="(min-width: 1300px)" srcset="img/main-catalog/catalog-3-desktop.png"/>
+							<source media="(min-width: 768px)" srcset="img/main-catalog/catalog-3-tablet.png"/>
+							<source srcset="img/main-catalog/catalog-3-mobile.png"/>
+							<img alt="Корм" class="main-catalog__img">
+						</picture>
+					</div>
+					<div class="main-catalog__description">
+						<h3 class="main-catalog__title">Cat Energy PRO 500 г</h3>
+						<ul class="main-catalog__info">
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Обьем</span>
+								<span class="main-catalog__value">500 г</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Вкус</span>
+								<span class="main-catalog__value">Рыба</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Цена</span>
+								<span class="main-catalog__value">700 р.</span>
+							</li>
+						</ul>
+					</div>
+					<div class="main-catalog__order">
+						<button class="main-catalog__btn btn" type="button">Заказать</button>
+					</div>
+				</li>
+				<li class="main-catalog__item">
+					<div class="main-catalog__img-wrapper">
+						<picture>
+							<source media="(min-width: 1300px)" srcset="img/main-catalog/catalog-4-desktop.png"/>
+							<source media="(min-width: 768px)" srcset="img/main-catalog/catalog-4-tablet.png"/>
+							<source srcset="img/main-catalog/catalog-4-mobile.png"/>
+							<img alt="Корм" class="main-catalog__img">
+						</picture>
+					</div>
+					<div class="main-catalog__description">
+						<h3 class="main-catalog__title">Cat Energy PRO 1000 г</h3>
+						<ul class="main-catalog__info">
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Обьем</span>
+								<span class="main-catalog__value">1000 г</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Вкус</span>
+								<span class="main-catalog__value">Рыба</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Цена</span>
+								<span class="main-catalog__value">1000 р.</span>
+							</li>
+						</ul>
+					</div>
+					<div class="main-catalog__order">
+						<button class="main-catalog__btn btn" type="button">Заказать</button>
+					</div>
+				</li>
+				<li class="main-catalog__item">
+					<div class="main-catalog__img-wrapper">
+						<picture>
+							<source media="(min-width: 1300px)" srcset="img/main-catalog/catalog-5-desktop.png"/>
+							<source media="(min-width: 768px)" srcset="img/main-catalog/catalog-5-tablet.png"/>
+							<source srcset="img/main-catalog/catalog-5-mobile.png"/>
+							<img alt="Корм" class="main-catalog__img">
+						</picture>
+					</div>
+					<div class="main-catalog__description">
+						<h3 class="main-catalog__title">Cat Energy SLIM 500 г</h3>
+						<ul class="main-catalog__info">
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Обьем</span>
+								<span class="main-catalog__value">500 г</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Вкус</span>
+								<span class="main-catalog__value">Гречка</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Цена</span>
+								<span class="main-catalog__value">400 р.</span>
+							</li>
+						</ul>
+					</div>
+					<div class="main-catalog__order">
+						<button class="main-catalog__btn btn" type="button">Заказать</button>
+					</div>
+				</li>
+				<li class="main-catalog__item">
+					<div class="main-catalog__img-wrapper">
+						<picture>
+							<source media="(min-width: 1300px)" srcset="img/main-catalog/catalog-6-desktop.png"/>
+							<source media="(min-width: 768px)" srcset="img/main-catalog/catalog-6-tablet.png"/>
+							<source srcset="img/main-catalog/catalog-6-mobile.png"/>
+							<img alt="Корм" class="main-catalog__img">
+						</picture>
+					</div>
+					<div class="main-catalog__description">
+						<h3 class="main-catalog__title">Cat Energy SLIM 1000 г</h3>
+						<ul class="main-catalog__info">
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Обьем</span>
+								<span class="main-catalog__value">1000 г</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Вкус</span>
+								<span class="main-catalog__value">Гречка</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Цена</span>
+								<span class="main-catalog__value">700 р.</span>
+							</li>
+						</ul>
+					</div>
+					<div class="main-catalog__order">
+						<button class="main-catalog__btn btn" type="button">Заказать</button>
+					</div>
+				</li>
+				<li class="main-catalog__item">
+					<div class="main-catalog__img-wrapper">
+						<picture>
+							<source media="(min-width: 1300px)" srcset="img/main-catalog/catalog-7-desktop.png"/>
+							<source media="(min-width: 768px)" srcset="img/main-catalog/catalog-7-tablet.png"/>
+							<source srcset="img/main-catalog/catalog-7-mobile.png"/>
+							<img alt="Корм" class="main-catalog__img">
+						</picture>
+					</div>
+					<div class="main-catalog__description">
+						<h3 class="main-catalog__title">Cat Energy SLIM 500 г</h3>
+						<ul class="main-catalog__info">
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Обьем</span>
+								<span class="main-catalog__value">500 г</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Вкус</span>
+								<span class="main-catalog__value">Рис</span>
+							</li>
+							<li class="main-catalog__info-item">
+								<span class="main-catalog__definition">Цена</span>
+								<span class="main-catalog__value">500 р.</span>
+							</li>
+						</ul>
+					</div>
+					<div class="main-catalog__order">
+						<button class="main-catalog__btn btn" type="button">Заказать</button>
+					</div>
+				</li>
+				<li class="main-catalog__item main-catalog__item--more">
+					<div class="main-catalog__cross-mark"></div>
+					<h3 class="main-catalog__title main-catalog__title--more">Показать еще 100500 товаров</h3>
+					<b class="main-catalog__lead">На самом деле вкусов гораздо больше!</b>
+					<div class="main-catalog__order">
+						<button class="main-catalog__btn main-catalog__btn--more btn" type="button">Показать все</button>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="extra-catalog container">
+			<h2 class="extra-catalog__title"><span class="extra-catalog__title-inner">Дополнительные товары</span></h2>
+			<ul class="extra-catalog__list">
+				<li class="extra-catalog__item">
+					<h3 class="extra-catalog__item-title">Сахарозаменитель</h3>
+					<div class="extra-catalog__info">
+						<span class="extra-catalog__amount">1 упаковка (100 г)</span>
+						<span class="extra-catalog__price">100 р.</span>
+					</div>
+					<div class="extra-catalog__order">
+						<button class="extra-catalog__btn btn">Заказать</button>
+					</div>
+				</li>
+				<li class="extra-catalog__item">
+					<h3 class="extra-catalog__item-title">Питьевая вода</h3>
+					<div class="extra-catalog__info">
+						<span class="extra-catalog__amount">5 литров</span>
+						<span class="extra-catalog__price">50 р.</span>
+					</div>
+					<div class="extra-catalog__order">
+						<button class="extra-catalog__btn btn">Заказать</button>
+					</div>
+				</li>
+				<li class="extra-catalog__item">
+					<h3 class="extra-catalog__item-title">Молоко</h3>
+					<div class="extra-catalog__info">
+						<span class="extra-catalog__amount">1 литр</span>
+						<span class="extra-catalog__price">100 р.</span>
+					</div>
+					<div class="extra-catalog__order">
+						<button class="extra-catalog__btn btn">Заказать</button>
+					</div>
+				</li>
+				<li class="extra-catalog__item">
+					<h3 class="extra-catalog__item-title">Витамины</h3>
+					<div class="extra-catalog__info">
+						<span class="extra-catalog__amount">1 упаковка (30 г)</span>
+						<span class="extra-catalog__price">300 р.</span>
+					</div>
+					<div class="extra-catalog__order">
+						<button class="extra-catalog__btn btn">Заказать</button>
+					</div>
+				</li>
+			</ul>
+			<p class="extra-catalog__gift">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+		</section>
+		<section class="address">
+			<h2 class="visually-hidden">Адрес</h2>
+			<div class="address__info-wrapper">
+				<div class="address__info">
+					<b class="address__invitation">Приглашаем<br>к сотрудничеству<br>дилеров!</b>
+					<p class="address__text">
+						ул. Большая<br>Конюшенная, д. 19/8<br>
+						<span class="address__city">Санкт-Петербург</span>
+					</p>
+				</div>
+			</div>
+			<iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.224040241621!2d30.32142904645859!3d59.93857987931942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1560516270337!5m2!1sru!2sua" width="320" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<div class="page-footer__wrapper container">
+			<a href="index.html" class="text-logo page-footer__text-logo">
+				<img src="img/text-logo.svg" class="text-logo__img page-footer__text-logo-img"/>
+			</a>
+			<ul class="social page-footer__social">
+				<li class="social__item">
+					<a href="#" class="social__link">
+						<svg class="social__img social__img--vk" width="22" height="12">
+							<use xlink:href="#vk"/>
+						</svg>
+					</a>
+				</li>
+				<li class="social__item">
+					<a href="#" class="social__link">
+						<svg class="social__img social__img--insta" width="16" height="16">
+							<use xlink:href="#insta"/>
+						</svg>
+					</a>
+				</li>
+				<li class="social__item">
+					<a href="#" class="social__link">
+						<svg class="social__img social__img--fb" width="10" height="19">
+							<use xlink:href="#fb"/>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<div class="page-footer__copyright copyright">
+				<p class="copyright__text">HTML Academy</p>
+				<a href="#" class="copyright__link">
+					<svg class="copyright__img" width="27" height="34">
+						<use xlink:href="#html-academy"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script>
+		/*menu script*/
+
+		var navMain = document.querySelector('.main-nav');
+		var navToggle = document.querySelector('.main-nav__toggle');
+
+		navToggle.addEventListener('click', function() {
+			if (navMain.classList.contains('main-nav--opened')) {
+				navMain.classList.remove('main-nav--opened');
+				navMain.classList.add('main-nav--closed');
+			} else {
+				navMain.classList.remove('main-nav--closed');
+				navMain.classList.add('main-nav--opened');
+			}
+		});
+	</script>
+</body>
+</html>
